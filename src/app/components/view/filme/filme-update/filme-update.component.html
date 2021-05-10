@@ -1,0 +1,26 @@
+<form>
+    <h1>Editar Filme</h1>
+
+    <mat-form-field class="form-titulo">
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="filme.titulo" type="text" name="titulo">
+    </mat-form-field>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Duração</mat-label>
+        <input matInput [(ngModel)]="filme.duracao" type="text" name="duracao">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input matInput [(ngModel)]="filme.descricao" type="text" name="descricao">
+    </mat-form-field>
+
+
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-button mat-elevation-z8" mat-stroked-button color="primary">Atualizar</button>
+        <button (click)="cancel()" class="mat-button mat-elevation-z8" mat-stroked-button color="warm">Cancelar</button>
+    </div>
+
+</form>

@@ -1,0 +1,39 @@
+<form>
+    <h1>Nova Sessão</h1>
+
+    <mat-form-field class="form-titulo">
+        <mat-label>Data</mat-label>
+        <input matInput [(ngModel)]="sessao.data" type="text" name="data" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Iício</mat-label>
+        <input matInput [(ngModel)]="sessao.hora_inicio" type="text" name="inicio" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>R$ Ingresso</mat-label>
+        <input matInput [(ngModel)]="sessao.valor_ingresso" type="text" name="valor_ingresso" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Animação</mat-label>
+        <input matInput [(ngModel)]="sessao.tipo_animacao" type="text" name="tipo_animacao" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Audio</mat-label>
+        <input matInput [(ngModel)]="sessao.tipo_audio" type="text" name="tipo_audio"
+            disabled>
+    </mat-form-field>
+
+
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-button mat-elevation-z8" mat-stroked-button
+            color="primary">Excluir</button>
+        <button (click)="cancelar()" class="mat-button mat-elevation-z8" mat-stroked-button
+            color="warm">Cancelar</button>
+    </div>
+
+</form>

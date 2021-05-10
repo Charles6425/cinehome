@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 5d34bfadaf10ed8673408f00735f31d91b578f18 Charles6425 <charlesmullerti@gmail.com> 1619711094 -0300	commit (initial): initial commit
+5d34bfadaf10ed8673408f00735f31d91b578f18 a066cf2365da663b4bd2288c1a9d672fac3e714f Charles6425 <charlesmullerti@gmail.com> 1619713440 -0300	commit: Angular material instalado no projeto
+a066cf2365da663b4bd2288c1a9d672fac3e714f 3b913173583635838a66356f77c29f38a16c1371 Charles6425 <charlesmullerti@gmail.com> 1619719857 -0300	commit: Implementação de header e footer
+3b913173583635838a66356f77c29f38a16c1371 3d202599f9623ab0a0526a45cd8d71263ceb1984 Charles6425 <charlesmullerti@gmail.com> 1619727396 -0300	commit: Home implementado com rota
+3d202599f9623ab0a0526a45cd8d71263ceb1984 8329edafdc0258c0fa853d0bd9dc35614bf0a995 Charles6425 <charlesmullerti@gmail.com> 1619793218 -0300	commit: Read para sala e filme
+8329edafdc0258c0fa853d0bd9dc35614bf0a995 05096d34318782121d1936b7ea891de0f0827ac0 Charles6425 <charlesmullerti@gmail.com> 1619804817 -0300	commit: ajustes no read filme
+05096d34318782121d1936b7ea891de0f0827ac0 57388c7e5a419400538e5861a1bad47843090851 Charles6425 <charlesmullerti@gmail.com> 1619825862 -0300	commit: Ajustes de create para filmes
+57388c7e5a419400538e5861a1bad47843090851 767fe5cc9ef16c3da1fd125880cc5a39ae6e766a Charles6425 <charlesmullerti@gmail.com> 1619883168 -0300	commit: função de botão cancel
+767fe5cc9ef16c3da1fd125880cc5a39ae6e766a c6e97fa986d1e03cb50ee778745797b40ee36e56 Charles6425 <charlesmullerti@gmail.com> 1619893427 -0300	commit: Delete para filme criado
+c6e97fa986d1e03cb50ee778745797b40ee36e56 95efbf94911e20bee28500b7828ce8352afc8a37 Charles6425 <charlesmullerti@gmail.com> 1619896892 -0300	commit: update criado para filmes
+95efbf94911e20bee28500b7828ce8352afc8a37 c95d2855e2ac4516c7f227b05fba2ac106088077 Charles6425 <charlesmullerti@gmail.com> 1620085413 -0300	commit: desenvolvimento e ajustes do end point sessao
+c95d2855e2ac4516c7f227b05fba2ac106088077 99d7ab73bb2cd08502e2595dddd69f819c8dc8f1 Charles6425 <charlesmullerti@gmail.com> 1620454897 -0300	commit: Ajustes de sessão
+99d7ab73bb2cd08502e2595dddd69f819c8dc8f1 46bf3620d0c25a0aea0ef52998717b6c580f32fc Charles6425 <charlesmullerti@gmail.com> 1620683807 -0300	commit: deploy dos últimos ajustes
+46bf3620d0c25a0aea0ef52998717b6c580f32fc 00dd61a2951be6e6de79f10ae682c2199d088426 Charles6425 <charlesmullerti@gmail.com> 1620684218 -0300	commit: ajuste para o endereço da api no heroku

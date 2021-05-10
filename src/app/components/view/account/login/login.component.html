@@ -1,0 +1,18 @@
+<form>
+    <h1>Login</h1>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Usuario</mat-label>
+        <input matInput [(ngModel)]="login.username" type="text" name="username" placeholder="Usuario:">
+    </mat-form-field>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Senha</mat-label>
+        <input matInput [(ngModel)]="login.password" type="password" name="password" placeholder="Senha:">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="onSubmit()"  class="mat-button mat-elevation-z8" mat-stroked-button
+        color="primary">Entrar</button>
+    </div>
+</form>

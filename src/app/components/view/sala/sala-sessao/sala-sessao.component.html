@@ -1,0 +1,45 @@
+<div class="content">
+    <div class="title">
+        <h1>Salas</h1>
+    </div>
+
+    <div class="mat-elevation-z8 content-table">
+
+        <table class="table" mat-table [dataSource]="salas">
+
+            <!-- id Column -->
+            <ng-container matColumnDef="id">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> ID </th>
+                <td mat-cell *matCellDef="let row"> {{ row.id}} </td>
+            </ng-container>
+
+            <!-- Nome Column -->
+            <ng-container matColumnDef="nome">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Nome </th>
+                <td mat-cell *matCellDef="let row"> {{ row.nome }} </td>
+            </ng-container>
+
+            <!-- QT assentos Column -->
+            <ng-container matColumnDef="qt_assentos">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Qt. Assentos </th>
+                <td mat-cell *matCellDef="let row"> {{ row.qt_assentos }} </td>
+            </ng-container>
+
+            <!-- Ações Column -->
+            <ng-container matColumnDef="sessoes">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef>Sessões</th>
+                <td mat-cell *matCellDef="let row">
+
+                    <a class="edit" routerLink="{{row.id}}/sessao">
+                        <i class="material-icons">movie</i>
+                    </a>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+
+
+</div>

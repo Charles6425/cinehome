@@ -1,0 +1,75 @@
+<div class="content">
+    <div class="title">
+        <h1>Sessões</h1>
+    </div>
+
+    <button (click)="novaSessao()" class="mat-button mat-elevation-z8" mat-stroked-button color="primary">Nova
+        sessão</button>
+
+    <div class="mat-elevation-z8 content-table">
+
+        <table class="table" mat-table [dataSource]="sessao">
+
+            <!-- id Column -->
+            <ng-container matColumnDef="id">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> ID </th>
+                <td mat-cell *matCellDef="let row"> {{ row.id}} </td>
+            </ng-container>
+
+            <!-- Data Column -->
+            <ng-container matColumnDef="data">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Data </th>
+                <td mat-cell *matCellDef="let row"> {{ row.data }} </td>
+            </ng-container>
+
+            <!-- Inicio Column -->
+            <ng-container matColumnDef="hora_inicio">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Início </th>
+                <td mat-cell *matCellDef="let row"> {{ row.hora_inicio }} </td>
+            </ng-container>
+
+            <!-- Fim Column -->
+            <ng-container matColumnDef="hora_fim">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Fim</th>
+                <td mat-cell *matCellDef="let row"> {{ row.hora_fim }} </td>
+            </ng-container>
+
+            <!-- Valor Column -->
+            <ng-container matColumnDef="valor_ingresso">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Ingresso R$</th>
+                <td mat-cell *matCellDef="let row"> {{ row.valor_ingresso }} </td>
+            </ng-container>
+
+            <!-- Tipo Animação Column -->
+            <ng-container matColumnDef="tipo_animacao">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Animação</th>
+                <td mat-cell *matCellDef="let row"> {{ row.tipo_animacao }} </td>
+            </ng-container>
+
+            <!-- Tipo Audio Column -->
+            <ng-container matColumnDef="tipo_audio">
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Audio</th>
+                <td mat-cell *matCellDef="let row"> {{ row.tipo_audio }} </td>
+            </ng-container>
+
+            <ng-container class="acoes" matColumnDef="acoes">
+                <th mat-header-cell *matHeaderCellDef>Ação</th>
+                <td mat-cell *matCellDef="let row">
+                    
+                    <a class="edit" routerLink="{{row.id}}/update">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <a class="delete" routerLink="delete/{{row.id}}">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+
+</div>

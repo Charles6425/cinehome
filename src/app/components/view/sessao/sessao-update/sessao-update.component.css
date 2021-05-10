@@ -1,0 +1,31 @@
+form{
+    text-align: start;
+    width: 70%;
+    margin: 2rem auto 0 auto;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.form{
+    width: 100%;
+}
+.form-titulo{   
+    width: 69%;
+    padding-right: .5rem;
+       
+}
+.form-duracao{
+    width: 30%;
+}
+
+
+.buttons{
+    text-align: end;
+}
+button{
+    margin: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}

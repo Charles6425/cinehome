@@ -1,0 +1,37 @@
+<form>
+    <h1>Atualizar Sessão</h1>
+
+    <mat-form-field class="form-titulo">
+        <mat-label>Data</mat-label>
+        <input matInput [(ngModel)]="sessao.data" type="text" name="data" placeholder="Data da sessão.">
+    </mat-form-field>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Iício</mat-label>
+        <input matInput [(ngModel)]="sessao.hora_inicio" type="text" name="inicio" placeholder="Ex. 9:00">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>R$ Ingresso</mat-label>
+        <input matInput [(ngModel)]="sessao.valor_ingresso" type="text" name="valor_ingresso" placeholder="Valor R$.">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Animação</mat-label>
+        <input matInput [(ngModel)]="sessao.tipo_animacao" type="text" name="tipo_animacao" placeholder="Ex. 3D...">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Audio</mat-label>
+        <input matInput [(ngModel)]="sessao.tipo_audio" type="text" name="tipo_audio"
+            placeholder="Ex. original, dublado...">
+    </mat-form-field>
+
+
+
+    <div class="buttons">
+        <button (click)="update()" class="mat-button mat-elevation-z8" mat-stroked-button color="primary">Atualizar</button>
+        <button (click)="cancelar()" class="mat-button mat-elevation-z8" mat-stroked-button color="warm">Cancelar</button>
+    </div>
+    
+</form>

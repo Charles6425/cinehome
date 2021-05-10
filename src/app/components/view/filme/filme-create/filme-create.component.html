@@ -1,0 +1,32 @@
+<form>
+    <h1>Novo Filme</h1>
+
+    <mat-form-field class="form-titulo">
+        <mat-label>Título</mat-label>
+        <input matInput [(ngModel)]="filme.titulo" type="text" name="titulo" placeholder="Título do filme."
+            maxlength="150">
+
+    </mat-form-field>
+
+    <mat-form-field class="form-duracao">
+        <mat-label>Duração</mat-label>
+        <input matInput [(ngModel)]="filme.duracao" type="text" name="duracao" placeholder="Ex. 1:30">
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <input matInput [(ngModel)]="filme.descricao" type="text" name="descricao"
+            placeholder="Ex. Um breve resumo do filme." maxlength="2000000">
+
+    </mat-form-field>
+
+
+
+    <div class="buttons">
+        <button (click)="create()" class="mat-button mat-elevation-z8" mat-stroked-button
+            color="primary">Salvar</button>
+        <button (click)="cancel()" class="mat-button mat-elevation-z8" mat-stroked-button color="warm">Cancelar</button>
+    </div>
+
+</form>
